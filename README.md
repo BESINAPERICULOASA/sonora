@@ -114,6 +114,16 @@ Download and run the [installer](https://github.com/nolight132/sonora/releases/l
 
 Download the latest `windows-msvc.exe` for your architecture from [Releases](https://github.com/nolight132/sonora/releases/latest).
 
+## YouTube Music Premium audio
+
+Signed-in playback requests the account's highest-bitrate audio-only stream first, including
+Premium AAC and Opus formats when YouTube makes them available. Opus streams use a WebM audio
+container; no video is downloaded. If the authenticated stream cannot be resolved or downloaded,
+playback falls back to the ordinary stream. Guest playback is unchanged.
+
+YouTube's High tier is nominally 256 kbps; the reported bitrate can vary with the codec and track.
+The playback log records the selected format, codec and reported bitrate, including any fallback.
+
 ## Discord Rich Presence
 
 Enable **Settings → Playback → Discord Rich Presence** to share the playing track with the Discord
