@@ -525,7 +525,7 @@ fn refusal(error: &anyhow::Error) -> PlaybackEvent {
 
 async fn fetch(api: &YtMusic, id: &str) -> Result<Loaded> {
     let (format, data) = api.load_high_quality_audio(id).await?;
-    log::info!(
+    log::debug!(
         "playback: youtube audio itag={} codec={} reported_bitrate={} bps",
         format.itag,
         format.codec,

@@ -10,7 +10,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Added
 
 - YouTube Music playback uses the signed-in account's best available audio, including Premium
-  AAC and Opus streams, with ordinary playback as a fallback. WebM audio is supported.
+  AAC and Opus streams, with ordinary playback as a fallback. WebM audio is supported. A Premium
+  badge appears in Settings → General once the session confirms access to High-tier audio.
 
 - Discord Rich Presence can be enabled in Settings → Playback to share the current song, artist,
   artwork and playback progress. Choose Sonora or Auto-Detect for the application label; Auto-Detect

@@ -65,6 +65,11 @@ pub enum MediaKind {
 
 #[async_trait]
 pub trait MusicApi: Send + Sync {
+    /// True after this session has confirmed access to Premium audio.
+    fn has_premium_audio(&self) -> bool {
+        false
+    }
+
     fn alive(&self) -> bool {
         true
     }

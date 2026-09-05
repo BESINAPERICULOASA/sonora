@@ -123,6 +123,9 @@ playback falls back to the ordinary stream. Guest playback is unchanged.
 
 YouTube's High tier is nominally 256 kbps; the reported bitrate can vary with the codec and track.
 The playback log records the selected format, codec and reported bitrate, including any fallback.
+Settings → General shows a **Premium** badge beside YouTube Music after a signed-in track response
+confirms High-tier audio. This confirmation belongs to the current session and resets on reconnect;
+it does not depend on the quality of every subsequent track or make extra membership requests.
 
 ## Discord Rich Presence
 
